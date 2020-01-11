@@ -274,8 +274,8 @@ $(function() {
     // &picName2=xx&picAddr2=xx
     // &picName3=xx&picAddr3=xx
     params += "&picName1=" + picArr[0].picName + "&picAddr1=" + picArr[0].picAddr;
-    params += "&picName2=" + picArr[1].picName + "&picAddr2=" + picArr[1].picAddr;
-    params += "&picName3=" + picArr[2].picName + "&picAddr3=" + picArr[2].picAddr;
+    // params += "&picName2=" + picArr[1].picName + "&picAddr2=" + picArr[1].picAddr;
+    // params += "&picName3=" + picArr[2].picName + "&picAddr3=" + picArr[2].picAddr;
 
     console.log(params);
 

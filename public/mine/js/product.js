@@ -98,11 +98,11 @@ $(function(){
     })
 
     $('.dropdown-menu').on('click','.brand-a',function(){
-      var text=$(this).text();
-      
-      $('#dropdownText').html(text);
+      var txt=$(this).text();
       var id=$(this).data("id");
-      $('[name="btandId"]').val(id);
+      $('#dropdownText').text(txt);
+      
+      $('[name="brandId"]').val(id);
      
 
     })
@@ -212,12 +212,13 @@ $(function(){
 
 
 
-  $('#btn-add').click(function(e){
+  // $('#btn-add').click(function(e){
+    $("#form").on("success.form.bv", function( e ) {
     e.preventDefault();
     var params = $('#form').serialize();
     params += "&picName1=" + picArr[0].picName + "&picAddr1=" + picArr[0].picAddr;
-    // params += "&picName2=" + picArr[1].picName + "&picAddr2=" + picArr[1].picAddr;
-    // params += "&picName3=" + picArr[2].picName + "&picAddr3=" + picArr[2].picAddr;
+    params += "&picName2=" + picArr[1].picName + "&picAddr2=" + picArr[1].picAddr;
+    params += "&picName3=" + picArr[2].picName + "&picAddr3=" + picArr[2].picAddr;
    $.ajax({
     type:"post",
     url:"/product/addProduct",
@@ -239,50 +240,6 @@ $(function(){
   })
 
 
-    // $('#btn-body').on('click','#btn-down',function(){
-    //     console.log('asdasd');
-    //     var id = $(this).parent().data("id");
-    //     // var statu = $(this).hasClass("btn-success") ? 1 : 0;
-    //     $.ajax({
-    //      type:'post',
-    //      url: "/user/updateUser",
-    //      data:{
-    //          id:id,
-    //          statu:statu,
-    //      },
-    //      success:function(info){
-    //       if(info.success){
-    //           render();
-    //       }
-    //      }
-    //     })
-    
-    // })
-   
-    
 
-
-// $('#btn-up').click(function(){
-//     var id = $(this).parent().data("id");
-//     var stastus = $(this).hasClass("btn-success") ? 1 : 0;
-//     $.ajax({
-//      type:'post',
-//      url: "/user/updateUser",
-//      data:{
-//         id:id,
-//         statu:statu,
-//      },
-//      success:function(info){
-//       if(info.success){
-//           render();
-//       }
-//      }
-
-
-//     })
-    
-
-
-// })
 
 })
