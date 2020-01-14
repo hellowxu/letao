@@ -1,6 +1,6 @@
 $(function(){
     var currentPage = 1; // 当前页
-    var pageSize = 2; // 一页多少条
+    var pageSize = 4; // 一页多少条
     var picArr = []; // 专门用来保存图片对象
   
     // 1. 一进入页面就进行页面渲染
@@ -90,13 +90,8 @@ $(function(){
         var htmlStr = template( "dropdownTpl", info );
         $('.dropdown-menu').html( htmlStr );
       }
-
-
-
     })
-
     })
-
     $('.dropdown-menu').on('click','.brand-a',function(){
       var txt=$(this).text();
       var id=$(this).data("id");

@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+html{
+    height: 100%;
+    width: 100%;
+    
+}
+body{
+    padding-top: 45px ;
+    padding-bottom: 50px;
+    height: 100%;
+    
+}
+.container{
+    height: 100%;
+    min-width: 320px;
+    max-width: 640px;
+  
+}
+/* 头部排版布局 */
+.head{
+    position: fixed;
+    top:0;
+    width: 100%;
+    height: 45px;
+    min-width: 320px;
+    max-width: 640px;
+    display: flex;
+    background-color: #006699;
+}
+.left{
+width: 15%;
+text-align: center;
+line-height: 45px;
+color: white;
+
+}
+.right{
+    width: 15%;
+    text-align: center;
+    line-height: 45px;
+    color: white;
+   
+}
+.mid{
+    flex: 1;
+    text-align: center;
+    line-height: 45px;
+    color: white;
+    /* font-weight: bold; */
+    font-size: 20px;
+}
+
+/* 底部布局 */
+
+.bottom{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #006699;
+    display: flex;
+    min-width: 320px;
+    max-width: 640px;
+}
+ul{
+    list-style: none;
+}
+
+.bottom ul{
+    
+    width: 100%;
+}
+.bottom ul li{
+    width: 25%;
+    float: left;
+    height: 100%;
+    /* background-color: blueviolet; */
+    text-align: center;
+    
+}
+.bottom ul li p{
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    color: white;
+    margin-bottom: 0;
+}
+
+.bot-click{
+    
+        height: 25px;
+        text-align: center;
+        line-height: 25px;
+        color: yellow;
+        margin-bottom: 0;
+   
+}
+
+/* 中间布局 */
+.center{
+    width: 100%;
+    height: 100%;
+    
+    position: relative;
+    
+}
+.nav{
+    display: flex;
+    
+}
+.nav ul li{
+  width: 33.33%;
+  float: left;
+  
+}
+.nav ul li img{
+    width: 100%;
+   display: block;
+}
+
+/* 卡片布局 */
+.card{
+    width: 100%
+    
+}
+.card ul li{
+    float: left;
+    width: 48%;
+    border: 1px solid black;
+    text-align: center;
+    margin: 3px;
+    padding-bottom: 5px;
+   
+}
+.card ul li img{
+ width: 150px;
+ height: 150px;
+
+}
+.card-p{
+    text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.card-sp{
+    color: red;
+}
