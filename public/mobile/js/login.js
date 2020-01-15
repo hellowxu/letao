@@ -16,7 +16,7 @@ $(function() {
     // 获取用户名和密码
     var username = $('#username').val();
     var password = $('#password').val();
-
+     
     if ( username.trim() === "" ) {
       mui.toast("请输入用户名");
       return;
@@ -32,7 +32,7 @@ $(function() {
       url: "/user/login",
       data: {
         username: username,
-        password: password
+        password: password,
       },
       dataType: "json",
       success: function( info ) {

@@ -1,0 +1,50 @@
+.center{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+.c-search{
+    width: 80%;
+    float: left;
+    height: 50px;
+    border: 1px solid #007aff;
+}
+.search{
+    width: 80%;
+    height: 50px !important;
+    
+}
+.c-p{
+    width: 20%;
+    text-align: center;
+    float: left;
+    height: 50px;
+    line-height: 50px;
+   color: white;
+    background-color: #007aff
+}
+
+.history-left{
+    float: left;
+    font-size: 12px;
+}
+.history-right{
+    float: left;
+    font-size: 12px;
+    margin-left: 235px;
+}
+.history-list{
+    float: left;
+    width: 100%;
+    height: 500px;
+    border: 1px solid red;
+    
+}
+.history-ul li{
+border:1px dotted red;
+position: relative;
+}
+.history-ul li span{
+    position: absolute;
+    right: 0;
+} 

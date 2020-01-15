@@ -1,0 +1,39 @@
+.mui-table-view-cell{
+    padding: 0;
+    border-bottom: 1px solid #c8c7cc;
+    
+}
+.all{
+    display: flex;
+}
+.center-left{
+    padding: 10px;
+    box-sizing: content-box;
+    width: 60px;
+    height: 90px;
+    /* float: left; */
+    
+}
+
+.center-left img{
+    width: 100%;
+}
+.center-right{
+    /* float: left; */
+    /* width: 100%;
+     */
+     flex:1;
+    height: 100%;
+   
+    padding-top: 10px;
+    position: relative;
+}
+.num{
+    position: absolute;
+    right:20px;
+    top: 40px;
+    font-size: 15px;
+}
+.good-price{
+    color: red;
+}

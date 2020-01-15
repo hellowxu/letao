@@ -1,0 +1,48 @@
+.center{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.center-left{
+    height: 100%;
+    width: 100px;
+    float: left;
+    position: relative;
+}
+.left-ul{
+    width: 100px;
+}
+.left-ul li{
+width: 100%;
+height: 50px;
+text-align: center;
+line-height: 50px;
+background-color:  #E3E4E5;
+color: #666;
+
+}
+.mui-scroll-wrapper{
+    height: 100%;
+    width: 100%;
+}
+.center-right{
+     overflow: hidden;
+    height: 100%;
+    /* width: 100px; */
+    border: 1px solid red;
+    position: relative;
+}
+.right-ul{
+    width: 100%;
+}
+.right-ul li{
+    width: 33.33%;
+    height: 100px;
+    text-align: center;
+    float: left;
+}
+.right-ul li a img{
+    width: 100%;
+    /* height: 100%; */
+    height: 68px;
+}
